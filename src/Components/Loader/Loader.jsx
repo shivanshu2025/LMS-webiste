@@ -8,7 +8,7 @@ const Loader = () => {
   // 1. Mouse Tracking for Parallax Effect
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
-  
+
   // Spring physics for smooth movement
   const springX = useSpring(mouseX, { stiffness: 50, damping: 20 });
   const springY = useSpring(mouseY, { stiffness: 50, damping: 20 });
@@ -62,16 +62,16 @@ const Loader = () => {
           <div className="relative flex items-center justify-center">
             {/* Glow Aura */}
             <div className="absolute w-80 h-80 bg-blue-500/5 rounded-full blur-[100px]" />
-            
+
             {/* 3D Spinner */}
             <div className="uiverse-loader"></div>
-            
+
             {/* --- Interactive Parallax Text --- */}
-            <motion.div 
+            <motion.div
               style={{ x: textX, y: textY }}
               className="absolute flex flex-col items-center z-10 text-center"
             >
-              <motion.h1 
+              <motion.h1
                 initial={{ letterSpacing: "0.2em", opacity: 0 }}
                 animate={{ letterSpacing: "0.5em", opacity: 1 }}
                 transition={{ duration: 1, delay: 0.2 }}
@@ -79,13 +79,15 @@ const Loader = () => {
               >
 
                 <div>
-                    <img src="/img/Logo_Animation.png" alt="Logo" className="w-24 h-24 mx-auto" />
+                  <img src="/img/Logo_Animation.png" alt="Logo" className="w-24 h-24 mx-auto" />
                 </div>
-                AI SCHOLARS
+                <h1 className="text-white text-2xl md:text-3xl font-black tracking-[0.3em]">
+                  AI SCHOLARS
+                </h1>
               </motion.h1>
-              
+
               {/* Progress Counter */}
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5 }}
@@ -99,16 +101,16 @@ const Loader = () => {
           {/* --- Status Footer --- */}
           <div className="absolute bottom-16 flex flex-col items-center gap-3">
             <div className="w-48 h-[2px] bg-white/5 relative overflow-hidden rounded-full">
-              <motion.div 
+              <motion.div
                 className="absolute inset-y-0 left-0 bg-cyan-500 shadow-[0_0_10px_#22d3ee]"
                 style={{ width: `${progress}%` }}
                 transition={{ duration: 0.1 }}
               />
             </div>
             <p className="text-cyan-500/40 font-mono text-[10px] tracking-[0.4em] uppercase animate-pulse">
-              {progress < 40 ? "Establishing Neural Link" : 
-               progress < 80 ? "Syncing Knowledge Base" : 
-               "Granting Access"}
+              {progress < 40 ? "Establishing Neural Link" :
+                progress < 80 ? "Syncing Knowledge Base" :
+                  "Granting Access"}
             </p>
           </div>
 
