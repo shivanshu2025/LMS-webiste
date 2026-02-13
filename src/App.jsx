@@ -7,6 +7,7 @@ import Login from './Pages/Login.jsx'
 import Layout from './layouts/Layout.jsx'
 import Loader from './Components/Loader/Loader.jsx'
 import ScrollToTop from './Components/js/ScrollToTop.jsx'
+import Pricing from './Pages/Pricing.jsx'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/About" element={<About />} />
           <Route path="/Courses" element={<Courses />} />
+          <Route path="/Pricing" element={<Pricing />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Login" element={<Login />} />
         </Routes>
