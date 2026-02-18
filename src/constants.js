@@ -4,3 +4,5 @@ export const NAV_ITEMS = [
   { title: 'Courses', link: 'Courses' },
   { title: 'Contact', link: 'Contact' },
 ];
+
+
