@@ -65,7 +65,7 @@ const Loader = () => {
 
             {/* 3D Spinner */}
             <div className="uiverse-loader"></div>
-{/* hwueto */}
+
             {/* --- Interactive Parallax Text --- */}
             <motion.div
               style={{ x: textX, y: textY }}
