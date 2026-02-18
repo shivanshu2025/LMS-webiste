@@ -1,9 +1,16 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { X, Star, CheckCircle } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const CoursePopup = ({ course, onClose }) => {
+  const navigate = useNavigate();
+
   if (!course) return null;
+
+  const handleCheckout = () => {
+    navigate("/Coursedetails");   
+  };
 
   return (
     <motion.div
@@ -56,7 +63,10 @@ const CoursePopup = ({ course, onClose }) => {
               ${course.price}
             </span>
 
-            <button className="flex items-center gap-2 bg-slate-900 text-white px-8 py-4 rounded-2xl font-bold hover:bg-[#4682B4] transition">
+            <button
+              onClick={handleCheckout}  
+              className="flex items-center gap-2 bg-slate-900 text-white px-8 py-4 rounded-2xl font-bold hover:bg-[#4682B4] transition"
+            >
               <CheckCircle size={20} /> Checkout Now
             </button>
           </div>

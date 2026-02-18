@@ -2,12 +2,11 @@ import React from "react";
 import { motion } from "framer-motion";
 import { ChevronRight, LayoutGrid, Star, Zap } from "lucide-react";
 
-const CourseCard = ({ course, onOpen, onClose }) => {
+const CourseCard = ({ course, onOpen }) => {
   return (
     <motion.div
       whileHover={{ y: -10 }}
-      onMouseEnter={() => onOpen(course)}
-      onMouseLeave={onClose}
+      onClick={() => onOpen(course)}   // 👈 updated
       className="bg-white rounded-[2rem] p-5 shadow-sm border border-slate-100 flex flex-col group relative overflow-hidden cursor-pointer"
     >
       {course.featured && (

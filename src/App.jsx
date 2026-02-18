@@ -8,6 +8,7 @@ import Layout from './layouts/Layout.jsx'
 import Loader from './Components/Loader/Loader.jsx'
 import ScrollToTop from './Components/js/ScrollToTop.jsx'
 import Pricing from './Pages/Pricing.jsx'
+import CourseDetails from './Components/course details/coursedetails.jsx'
 
 function App() {
   return (
@@ -22,9 +23,10 @@ function App() {
           <Route path="/Pricing" element={<Pricing />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Login" element={<Login />} />
+           <Route path="/Coursedetails" element={<CourseDetails/>} />
         </Routes>
       </Layout>
-
+        
       <Loader/>
     </>
   )
