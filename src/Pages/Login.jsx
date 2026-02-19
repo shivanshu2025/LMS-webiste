@@ -97,7 +97,7 @@ const Login = ({ open, onClose }) => {
                         className="absolute inset-0 bg-white/30 blur-2xl rounded-full"
                     />
                     <img
-                      src="./public/img/Logo_White.png"
+                      src="/img/Logo_White.png"
                       alt="Logo"
                       className="w-48 md:w-56 relative z-10 drop-shadow-2xl"
                     />

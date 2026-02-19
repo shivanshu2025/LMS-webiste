@@ -20,7 +20,7 @@ const Footer = () => {
           <div className="space-y-6">
 
             <img
-              src="./public/img/Ai_Scholars_png.png"  
+              src="/img/Ai_Scholars_png.png"  
               alt="Ai Scholars"
               className="h-10 w-auto object-contain"
             />
