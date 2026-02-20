@@ -96,7 +96,7 @@ const CourseDetails = () => {
                 <motion.div animate={{ rotate: -360 }} transition={{ duration: 20, repeat: Infinity, ease: "linear" }} className="absolute inset-8 border-[1px] border-blue-100 rounded-full" />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="w-24 h-24 bg-white rounded-full shadow-inner flex items-center justify-center border border-slate-100 transition-transform duration-500 group-hover:scale-110 group-hover:shadow-xl">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" className="w-12 h-12 opacity-80 group-hover:opacity-100 transition-opacity" alt="Python" />
+                    <img src="/img/blacklogo.png" className="w-20 h-20 opacity-80 group-hover:opacity-100 transition-opacity" alt="Python" />
                   </div>
                 </div>
               </div>
