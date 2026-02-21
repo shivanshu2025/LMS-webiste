@@ -59,9 +59,6 @@ const CourseCard = ({ course }) => {
       {/* Footer */}
       <div className="mt-auto flex items-center justify-between pt-5 border-t border-slate-100">
         <span className="text-[#4682B4] font-black text-2xl">${course.price}</span>
-        <button className="text-sm font-bold text-white bg-slate-900 px-6 py-3 rounded-xl group-hover:bg-[#4682B4] transition-colors">
-          Enroll Now
-        </button>
       </div>
     </motion.div>
   );
